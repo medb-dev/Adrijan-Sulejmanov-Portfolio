@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="format-detection" content="telephone=no">
+	<title>Drijan Sulejmanov | Blog</title>
+	<link href="css/blog_page.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon_1.ico" type="image/x-icon">
+	<style>
+		@keyframes animate-circle {
+			from {
+				transform: scale(0);
+				opacity: 1;
+			}
+
+			to {
+				transform: scale(1);
+				opacity: 0;
+			}
+		}
+
+		#preloader {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			background: #1C1C1C;
+			background: linear-gradient(to right, rgba(36, 31, 31, 1) 0%, rgba(36, 31, 31, 1) 32%, rgba(74, 71, 70, 1) 100%);
+		}
+
+		.loader {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			height: 10rem;
+			width: 10rem;
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+		.loader>.circle {
+			position: absolute;
+			height: inherit;
+			width: inherit;
+			background: #B66449;
+			border-radius: 0;
+			animation: animate-circle 2s cubic-bezier(.9, .24, .62, .79) infinite;
+		}
+
+		.loader>.circle:nth-of-type(1) {
+			animation-delay: 0s;
+		}
+
+		.loader>.circle:nth-of-type(2) {
+			animation-delay: calc(2s / -3);
+		}
+
+		.loader>.circle:nth-of-type(3) {
+			animation-delay: calc(2s / -6);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="preloader">
+		<div class="loader">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+	</div>
+	<main class="main blog_page">
+		<canvas class="noise" id="noise"></canvas>
+
+		<div class="header">
+			<canvas class="noise noise--inner" id="noise_menu"></canvas>
+			<div class="header__left">
+				<div class="header__letter"><b>A<span style="color: #B66449;">S</span></b></div>
+				<div class="header__socials">
+					<a><svg><use xlink:href=""></use></svg></a=>
+					<a><svg><use xlink:href=""></use></svg></a>
+					<a><svg><use xlink:href=""></use></svg></a>
+					</div>
+			</div>
+			<div class="header__right">
+				<ul class="blog_page-menu">
+					<li><a href="./index.html"><b style="text-shadow: 0 0 3px black;">Go back home</b></a></li>
+					<li><a></a></li>
+					<li><a></a></li>
+					<li><a></a></li>
+					<li><a></a></li>
+				</ul>
+				<div><a ></a></div>
+			</div>
+		</div>
+
+		<section class="blog_page-big_banner blog_page_3">
+			<div class="blog_page-container">
+				<div class="small" style="text-shadow: 0 0 8px black;">by Adrijan Sulejmanov |  2 September 2021</div>
+				<div class="h1" style="text-shadow: 0 0 8px black;" >Angular Vs React</div>
+			</div>
+		</section>
+
+		<section class="blog_page-content">
+			<div class="blog_page-container">
+				<div class="blog_page-text">
+
+					<div class="small">
+						
+							<div class="blog_page-h1">
+							</div>
+							<br>In this article, We are comparing 2 most popular technologies for the front end development: Angular and React. We are going to compare them from the project architect and by developers perspective as well as companies perspective. Comparing Angular and react is very popular topic nowadays. React and Angular are both highly advanced, widely adopted JavaScript technologies that we use to create responsive web apps and interactive single-page applications. The number of JavaScript tools for fast single-page application(SPAs) development is constantly growing, So choosing right framework for web developers is more challenging.
+							<div class="blog_page-h1">
+								<br>Comparison AngularJS vs React :
+							</div>
+							<div class="blog_page-h1">
+								<br>AngularJS
+							</div>
+							<br>Angular version 2 and above has been around less then React, but if you count in the history of its predecessor, AngularJS, the picture evens out. It’s maintained by Google and used in Analytics, Adwords and Google Fiber. Since AdWords is one of the key projects in Google, it is clear they have made a big bet on it and is unlikely to disappear anytime soon.
+							<br>React
+							<br>React is developed and maintained by Facebook and also used in their products like Instagram and WhatsApp. It has been around for roughly four and a half years now, so it’s not exactly new. It’s also one of the most popular projects on GitHub, with about 92,000 stars at the time of writing. Sounds good to me.
+							<br>Componentization
+							<div class="blog_page-h1">
+								<br>Angular JS:
+							</div>
+							<br>AngularJS has a very complex and fixed structure because it's based on the Model-View-Controller architecture typical of single-page applications. An object $scope in AngularJS is responsible for the Model part, which is initialized by the Controller and then transformed into HTML to create the View for the user. AngularJS provides many standard services, factories, controllers, directives, and other components. We break the code into several files in AngularJS. For example, when we create a reusable component with our own directive, controller, and template, we must describe each chunk of code in a separate file. Once we describe our directive, we then add a link to our template in the directive to couple these parts. AngularJS directives represent the template logic for your application. The template is HTML extended with AngularJS directives, generally written as tags or attributes. We also add controllers to provide our models with necessary $scope or context.
+							<br>Controllers are written in separate files as well. When we modularize our application in such a way, we can reuse our template or component in a different part of the website and this is very helpful for the AngularJS Development Company because it saves a lot of time and speeds up the development process.
+							<div class="blog_page-h1">
+								<br>Data Binding:
+							</div>
+							<br>In MVC Patterns the binding is the most important topic to pass any data in uni-direction or bi-directional flow.Data Binding is the data synchronization processes that work between the model and view components.
+							<br>AngularJS:
+							<br>Data-binding in Angular apps is the automatic synchronization of data between the model and view components. The way that Angular implements data-binding lets you treat the model as the single-source-of-truth in your application. The view is a projection of the model at all times. When the model changes, the view reflects the change and vice versa. It is simply attachment of data from Model to View or vice-versa in a sync way so that whenever any change occurs to any of model or view, other should show the change and this is sync.
+							<div class="blog_page-h1">
+								<br>React:
+							</div>
+							<br>The best feature in react is Virtual-Dom. React injects data into its rendered views at construct time, be that when the root view is created or via a nested view.React uses one-way data binding, meaning we are able to direct the flow of data only in one direction. Inside the class, the data that’s passed is accessed via the props property of the current context.
+							<br>Performance:
+							<div class="blog_page-h1">
+								<br>AngularJS:
+							</div>
+							<br>There are two things to take into consideration when we talk about Angular's performance. As we mentioned previously, Angular 1.x and higher relies on two-way data binding. This concept is based on “dirty checking," a mechanism that can make our AngularJS Application Development laggy.
+							<br>When we bind values in HTML with our model, AngularJS creates a watcher for each binding to track changes in the DOM. Once the View updates, AngularJS compares the new value with the initial value and runs the $digest loop. The $digest loop then checks not only values that have actually changed, but also all others values that are tracked through watchers. This is why performance will decrease a lot if your application has too many watchers.
+							<br>Another shortcoming of the AngularJS framework is the way it works with the DOM. Unlike React, AngularJS applies changes in the real DOM in the browser. When the real DOM gets updated, the browser has to change many internal values to represent a new DOM. This also has a negative impact on application performance. Poor performance is the main reason why Angular 2 supporters re-worked how Angular changes the program state. Angular 2 and the latest Angular 4 framework versions also feature server-side rendering and one-way data binding similarly to React. Still, Angular 2 and 4 offer two-way data binding as an option.
+							<br>Resolving Dependencies:
+							<div class="blog_page-h1">
+								<br>AngularJS:
+							</div>
+							<br>Dependency Injection is a software design pattern in which components are given their dependencies instead of hardcoding them within the component. This relieves a component from locating the dependency and makes dependencies configurable. This helps in making components reusable, maintainable and testable. AngularJS automatically finds appropriate objects that are injected as the $routeParams, $filter, store, and $scope parameters. There are two functions that make dependency injection possible in the AngularJS framework: $inject and $provide.
+							<div class="blog_page-h1">
+								<br>React:
+							</div>
+							<br>The difference between React and AngularJS with regards to dependency injection is that React doesn’t offer any concept of a built-in container for dependency injection. But this doesn't mean we have to think of a method to inject dependencies in our React project. You can use several instruments to inject dependencies automatically in a React application. Such instruments include Browserify, RequireJS, ECMAScript 6 modules which we can use via Babel, ReactJS-di, and so on. The only challenge is to pick a tool to use.
+							<div class="blog_page-h1">
+								<br>Conclusion:
+							</div>
+							<br>As you come to the bottom of the discussion, now few points are clear to you on both the frameworks and which is better for web application development. Hence, if you are deciding to choose one of them, then here’s my opinion. If you are trying to develop a basic web app then both can be used.
+							<br>Still, ReactJS is SEO friendly, real-time and compatible with heavy traffic. Whereas, AngularJS offers smooth development and testing along with reliability.
+
+						</div>
+				<ul class="blog_page-tags">
+					<li class="blog_page-tags_item blog_page-tags_title">Tags: </li>
+					<li class="blog_page-tags_item"><a class="blog_page-tags_link"> #react</a>, </li>
+					<li class="blog_page-tags_item"><a class="blog_page-tags_link"> #angular</a>, </li>
+					<li class="blog_page-tags_item"><a class="blog_page-tags_link"> #comparison</a></li>
+				</ul>
+			</div>
+		</section>
+
+	</main>
+	<script src="js/main.js"></script>
+</body>
+
+<!-- Mirrored from paul-themes.com/html/robert/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Dec 2021 11:50:58 GMT -->
+
+</html>

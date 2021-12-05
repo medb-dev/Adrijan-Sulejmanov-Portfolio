@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="format-detection" content="telephone=no">
+	<title>Drijan Sulejmanov | Blog</title>
+	<link href="css/blog_page.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon_1.ico" type="image/x-icon">
+	<style>
+		@keyframes animate-circle {
+			from {
+				transform: scale(0);
+				opacity: 1;
+			}
+
+			to {
+				transform: scale(1);
+				opacity: 0;
+			}
+		}
+
+		#preloader {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			background: #1C1C1C;
+			background: linear-gradient(to right, rgba(36, 31, 31, 1) 0%, rgba(36, 31, 31, 1) 32%, rgba(74, 71, 70, 1) 100%);
+		}
+
+		.loader {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			height: 10rem;
+			width: 10rem;
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+		.loader>.circle {
+			position: absolute;
+			height: inherit;
+			width: inherit;
+			background: #B66449;
+			border-radius: 0;
+			animation: animate-circle 2s cubic-bezier(.9, .24, .62, .79) infinite;
+		}
+
+		.loader>.circle:nth-of-type(1) {
+			animation-delay: 0s;
+		}
+
+		.loader>.circle:nth-of-type(2) {
+			animation-delay: calc(2s / -3);
+		}
+
+		.loader>.circle:nth-of-type(3) {
+			animation-delay: calc(2s / -6);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="preloader">
+		<div class="loader">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+	</div>
+	<main class="main blog_page">
+		<canvas class="noise" id="noise"></canvas>
+
+		<div class="header">
+			<canvas class="noise noise--inner" id="noise_menu"></canvas>
+			<div class="header__left">
+				<div class="header__letter"><b>A<span style="color: #B66449;">S</span></b></div>
+				<div class="header__socials">
+					<a><svg><use xlink:href=""></use></svg></a=>
+					<a><svg><use xlink:href=""></use></svg></a>
+					<a><svg><use xlink:href=""></use></svg></a>
+					</div>
+			</div>
+			<div class="header__right">
+				<ul class="blog_page-menu">
+					<li><a href="./index.html"><b style="text-shadow: 0 0 3px black;">Go back home</b></a></li>
+					<li><a></a></li>
+					<li><a></a></li>
+					<li><a></a></li>
+					<li><a></a></li>
+				</ul>
+				<div><a ></a></div>
+			</div>
+		</div>
+
+		<section class="blog_page-big_banner blog_page_1">
+			<div class="blog_page-container">
+				<div class="small" style="text-shadow: 0 0 8px black;">by Adrijan Sulejmanov |  24 july 2021</div>
+				<div class="h1" style="text-shadow: 0 0 8px black;" >What makes Laravel the</div>
+				<div class="h1" style="text-shadow: 0 0 8px black;" >best backend framework.</div>
+			</div>
+		</section>
+
+		<section class="blog_page-content">
+			<div class="blog_page-container">
+				<div class="blog_page-text">
+
+					<div class="small">
+						<br>Due to the enormous demand for online applications and server-side scripting, PHP has undoubtedly become one of the most popular languages in recent years. PHP developers uses a variety of frameworks to create web apps. Scalability, security, maintainability, architecture, and performance are all criteria considered while selecting this framework. This article will go over the features of Laravel that have led to it being regarded as the best PHP framework. Let's get started!.
+						<div class="blog_page-h1">
+							<br>Points We Will Cover in This Article :
+						</div>
+
+						<br>Open Souce and Community
+						<br>Extensive Documentation
+						<br>Performance
+						<br>Security
+						<br>Scalability and Speed
+						<br>Eloquent Object-Relational Mappers (ORM)
+						<br>Open Souce and Community
+						<br>Templating Engines
+						<br>Strong object-oriented programming prerequisit
+
+						<br>Let's begin by defining Laravel. Laravel is a web application framework with expressive, elegant syntax and a previously created base that allows you to create without worrying about the tiny details. Laravel is a prominent PHP framework for web development, with 64k+ ratings on GitHub.
+						<br>Despite ranking 7 on PHP Benchmarks' list of top-performing web development PHP frameworks, it tops our list due to its large community, rich feature set, and ease of use. Let's go through some of the aspects that make Laravel the best framework.
+						<div class="blog_page-h1">
+							<br>Open Source and Community
+						</div>
+
+						<br>Laravel is a free and open-source web development framework. You do not have to pay any licence fees to use Laravel. Laravel has a large developer community that may assist you when you get stuck when building your projects, especially for newbies who may want assistance at some point in their professional journey. It has incredible support from the PHP development community. As a result, the Laravel wheels are continually turning. From its inception in 2011 until the time of writing, there have been 20 major releases, with Laravel 8 being the most recent stable version. LTS versions are also available from the Laravel web framework community..
+						<div class="blog_page-h1">
+							<br>Extensive Documentation
+						</div>
+
+						<br>Laravel has extensive documentation to enable developers to get started. Everything in Laravel is documented, It also has API documentation with lists of all the classes and methods declared in Laravel to enable you to follow the right naming conventions. Everything you need to get you off the hook is available in the documentation.
+						<div class="blog_page-h1">
+							<br>Performance
+						</div>
+
+						<br>According to a Google study, 53% of web users tenders to leave a site that takes longer than 3 seconds to load. Most sites take about 15 seconds to load. That's how much performance matters to our web application. Laravel has built-in quick wins that can boost the performance of the web application by bypassing the route processing, caching all the required routing information, it can be boosted by using sessions, and optimizing the garbage collection process to have an improved task execution.
+						<div class="blog_page-h1">
+							<br>Security
+						</div>
+
+						<br>Laravel aims to make implementing authentication very simple and secure. In fact, almost everything is configured for you out of the box and you hardly have to do anything to set. When you set up user authentication, Laravel creates all the important components such as the user model, the register, the login controller as well as the corresponding views. Saving developers the time and security issues they may encounter doing it themselves or their way. Laravel also delivers a simple method to establish authorization reasoning and control access to the protected resources.
+						<div class="blog_page-h1">
+							<br>Conclusion
+						</div>
+						<br>In this post, we have been exposed to some of the facts that qualify Laravel as the 1# backend Framework. Laravel 8 comes with exciting new features like app/Models Directory, Controllers Routing Namespacing, Attributes on Extended Blade Components, Better Syntax for Event Listening, Queueable Anonymous Event Listeners, and other amazing features that will ease your development.
+						</div>
+				<ul class="blog_page-tags">
+					<li class="blog_page-tags_item blog_page-tags_title">Tags: </li>
+					<li class="blog_page-tags_item"><a class="blog_page-tags_link"> #php</a>, </li>
+					<li class="blog_page-tags_item"><a class="blog_page-tags_link"> #laravel</a>, </li>
+					<li class="blog_page-tags_item"><a class="blog_page-tags_link"> #backend</a></li>
+				</ul>
+			</div>
+		</section>
+
+	</main>
+	<script src="js/main.js"></script>
+</body>
+
+<!-- Mirrored from paul-themes.com/html/robert/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Dec 2021 11:50:58 GMT -->
+
+</html>

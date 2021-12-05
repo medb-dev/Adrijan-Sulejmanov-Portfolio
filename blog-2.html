@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="format-detection" content="telephone=no">
+	<title>Drijan Sulejmanov | Blog</title>
+	<link href="css/blog_page.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon_1.ico" type="image/x-icon">
+	<style>
+		@keyframes animate-circle {
+			from {
+				transform: scale(0);
+				opacity: 1;
+			}
+
+			to {
+				transform: scale(1);
+				opacity: 0;
+			}
+		}
+
+		#preloader {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 999;
+			background: #1C1C1C;
+			background: linear-gradient(to right, rgba(36, 31, 31, 1) 0%, rgba(36, 31, 31, 1) 32%, rgba(74, 71, 70, 1) 100%);
+		}
+
+		.loader {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			height: 10rem;
+			width: 10rem;
+			transform: translateX(-50%) translateY(-50%);
+		}
+
+		.loader>.circle {
+			position: absolute;
+			height: inherit;
+			width: inherit;
+			background: #B66449;
+			border-radius: 0;
+			animation: animate-circle 2s cubic-bezier(.9, .24, .62, .79) infinite;
+		}
+
+		.loader>.circle:nth-of-type(1) {
+			animation-delay: 0s;
+		}
+
+		.loader>.circle:nth-of-type(2) {
+			animation-delay: calc(2s / -3);
+		}
+
+		.loader>.circle:nth-of-type(3) {
+			animation-delay: calc(2s / -6);
+		}
+	</style>
+</head>
+
+<body>
+	<div id="preloader">
+		<div class="loader">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+	</div>
+	<main class="main blog_page">
+		<canvas class="noise" id="noise"></canvas>
+
+		<div class="header">
+			<canvas class="noise noise--inner" id="noise_menu"></canvas>
+			<div class="header__left">
+				<div class="header__letter"><b>A<span style="color: #B66449;">S</span></b></div>
+				<div class="header__socials">
+					<a><svg><use xlink:href=""></use></svg></a=>
+					<a><svg><use xlink:href=""></use></svg></a>
+					<a><svg><use xlink:href=""></use></svg></a>
+					</div>
+			</div>
+			<div class="header__right">
+				<ul class="blog_page-menu">
+					<li><a href="./index.html"><b style="text-shadow: 0 0 3px black;">Go back home</b></a></li>
+					<li><a></a></li>
+					<li><a></a></li>
+					<li><a></a></li>
+					<li><a></a></li>
+				</ul>
+				<div><a ></a></div>
+			</div>
+		</div>
+
+		<section class="blog_page-big_banner blog_page_2">
+			<div class="blog_page-container">
+				<div class="small" style="text-shadow: 0 0 8px black;">by Adrijan Sulejmanov |  2 April 2021</div>
+				<div class="h1" style="text-shadow: 0 0 8px black;" >The Top of </div>
+				<div class="h1" style="text-shadow: 0 0 8px black;" >Node.js Frameworks.</div>
+			</div>
+		</section>
+
+		<section class="blog_page-content">
+			<div class="blog_page-container">
+				<div class="blog_page-text">
+
+					<div class="small">
+						
+							<br>In the list of most popular JavaScript frameworks, Node.js has topped due to rising demand among the developers. From Asynchronous Event-Driven nature to offering a single codebase for the overall web application performance, Node.js brings robust features for developing and maintaining applications, especially when considered from long-term support. Being an open-source framework, it provides a seamless platform to integrate the best Node js libraries and tools which allow developers to run applications of multiple operating systems with the same ease.
+							<br>Different web apps require different Node.js frameworks for development, depending on their use case. However, MVC, full-stack MVC, and Node js REST API framework can be implemented with Node.js.
+							<br>Some of these Node js frameworks have been popularly used by businesses around the world and have emerged as the top frameworks for easy and convenient implementation.
+							<div class="blog_page-h1">
+								<br>The Top of Node.js Frameworks for Web App Development :
+							</div>
+							<div class="blog_page-h1">
+								<br>1. Expresss.js
+							</div>
+							<br>One of the top Node.js web frameworks, Express.js, is the perfect route to avail of high-speed operations with a simplistic architecture. It is the most standard framework that doesn't require you to get into advanced skills. You can use Express.js with a basic understanding of Node.js. With Express.js, the primary benefits are seen with robust APIs and improved client-server communication.
+							<br>The key features of Express.js can be listed as:
+							<br>Great test coverage for easy application building and optimized testing along with multiple high-performance operations facilitates minimal coding.
+							<br>Instant integration with APIs and all types of server-side tools for robust web application development.
+							<br>Optimized server-client communication and content negotiation that extracts the exact information by providing HTTP headers to URLs and thus boosts the overall performance.
+							<br>URL- based HTTP routing with MVC facilitation for centric applications and a variety of plug-in and extension options.
+							<div class="blog_page-h1">
+								<br>2. Meteor.js
+							</div>
+							<br>Meteor.js, a full-stack JavaScript platform to host, deploy and scale full-stack JavaScript applications. It operates with one language and provides a great set of features for flexible application development. You can access automated data changes and operability over a variety of devices without any developer intervention required. It is a great option to avail many libraries and build an efficient yet simplistic application with testing features inclusive. Some framework-specific features of Meteor.js are:
+							<br>An Isomorphic cross-platform framework with code implementation facilitated in modern JavaScript.
+							<br>It facilitates speed at all levels with speedier application interactions and faster loading results with improved availability.
+							<br>Easy to use and integrate with a variety of platforms and programming languages such as Angular and React.
+							<br>Universal code support for different devices and a lightweight architecture that delivers great performance.
+							<div class="blog_page-h1">
+								<br>3. Socket.io
+							</div>
+							<br>Being a full-stack Node js framework, socket.io is best suited for use with multiple programming languages. With this multiplexing support, it is known for real-time applications that require instant and reliable connectivity. It facilitates binary communication and great development speed for API integrations and other real-time features.
+							<div class="blog_page-h1">
+								<br>4. Sails.js
+							</div>
+							<br>Sails.js is an MVC web application framework built using Express with many socket integrations and database-based features. With a high range of customizable features, it offers an enterprise-level development solution using the Node js web framework. It is one of the best Node.js frameworks for building enterprise-grade applications with a modern data-oriented MVC architecture.
+							<div class="blog_page-h1">
+								<br>5. Hapi.js
+							</div>
+							<br>If security is your prime concern, then Hapi.js is one of the most popular Node js frameworks that can be the right fit for your web application. It is an open-source framework that can be used to implement reliable and flexible security options.
+							<div class="blog_page-h1">
+								<br>Final Words
+							</div>
+							<br>We hope your purpose of landing on this blog post for top Node.js frameworks has been accurately served. With the enormous capabilities, Node.js frameworks make it really convenient to develop full-stack applications efficiently. It has an active community of a huge number of full-stack Node.js developers, constantly developing new and improved frameworks. If you're new to using Node.js, you can rest assured that you've picked a robust option that has advanced existing options and yet many more to emerge in the time to come. Choose the best Node js framework from the above-listed choices considering your custom web application requirement. With more developers
+							<br>making the shift to Node.js, you're sure to experience better solutions and features in the future!
+						</div>
+				<ul class="blog_page-tags">
+					<li class="blog_page-tags_item blog_page-tags_title">Tags: </li>
+					<li class="blog_page-tags_item"><a class="blog_page-tags_link"> #node</a>, </li>
+					<li class="blog_page-tags_item"><a class="blog_page-tags_link"> #frameworks</a>, </li>
+					<li class="blog_page-tags_item"><a class="blog_page-tags_link"> #top_of</a></li>
+				</ul>
+			</div>
+		</section>
+
+	</main>
+	<script src="js/main.js"></script>
+</body>
+
+<!-- Mirrored from paul-themes.com/html/robert/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Dec 2021 11:50:58 GMT -->
+
+</html>
